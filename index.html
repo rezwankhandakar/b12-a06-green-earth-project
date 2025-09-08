@@ -104,6 +104,29 @@
         </div>
 
     </main>
+
+<div id="treeModal" class="fixed inset-0 hidden flex items-center justify-center">
+  <div class="absolute inset-0 backdrop-blur-sm bg-black/20"></div>
+
+  <!-- Modal content -->
+  <div class="relative bg-white w-96 rounded-xl p-4 z-10 flex flex-col">
+    <img id="modalImage" src="" alt="" class="w-full h-40 object-cover rounded-lg mb-2">
+    <h2 id="modalName" class="text-lg font-semibold"></h2>
+    <p id="modalDescription" class="text-sm text-gray-600 mt-1"></p>
+    <p id="modalPrice" class="text-md font-bold text-[#15803D] mt-2"></p>
+
+    <!-- Close button at bottom right -->
+    <div class="flex justify-end mt-4">
+      <button id="closeModal" class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+
+<div id="loadingSpinner" class="hidden fixed inset-0 flex items-center justify-center bg-white/50 z-50">
+    <div class="animate-spin rounded-full h-12 w-12 border-t-4 border-b-4 border-green-500"></div>
+</div>
     <script src="./script.js"></script>
 </body>
 </html>
