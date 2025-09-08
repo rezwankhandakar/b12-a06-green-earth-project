@@ -77,8 +77,8 @@ const loadCategory = () =>{
         treesContainer.innerHTML = ""
         plants.forEach(plant =>{ 
             treesContainer.innerHTML +=`
-            <div id="${plant.id}" class="bg-white border-1 border-gray-200 rounded-lg h-auto w-40 flex flex-col justify-between">
-                    <img class="h-32 w-40 rounded-xl  p-2 " src="${plant.image}" alt="">
+            <div id="${plant.id}" class="bg-white border-1 border-gray-200 rounded-lg h-auto w-50 flex flex-col justify-between">
+                    <img class="h-32 w-50 rounded-xl  p-2 " src="${plant.image}" alt="">
                     <h5 class="text-sm font-semibold pl-1">${plant.name}</h5>
                     <p class="text-[10px] pl-1">${plant.description}</p>
                     <div class="flex justify-between p-1">

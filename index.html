@@ -62,29 +62,32 @@
      </div>
     </section>
     
-    <main class="bg-[#F0FDF4] h-auto">
-        <div class=" h-auto mx-9 pt-9">
+    <!-- <main class="bg-[#F0FDF4] h-auto border-2 border-red-500">
+        <div class=" h-auto mx-9 pt-9"> -->
 
             <!-- title -->
-            <div class="flex justify-center items-center">
+            <!-- <div class="flex justify-center items-center">
                 <h3 class="text-lg font-semibold text-black">Choose Your Trees</h3>
             </div>
 
-            <section class="grid grid-cols-5 h-auto  gap-4  mt-3">
+            <section class="border-2 border-green-500 grid grid-cols-5 h-auto  gap-4  mt-3"> -->
 
   <!-- বাম দিকের ১ কলাম -->
-             <div class=" pl-2 h-auto">
+             <!-- <div class=" pl-2 h-auto">
                 <a class="text-black font-bold">Categories</a>
                <ul id="Categorie-container" class="text-black text-xs pt-2 grid gap-3">
                </ul>
-            </div>
+            </div> -->
 
   <!-- মাঝখানের ৩ কলাম -->
-            <div id="trees-container" class="col-span-3  h-auto grid grid-cols-3 gap-2  mb-3">
-            </div>
+            <!-- <div id="trees-container" class=" border-2 border-yellow-500 col-span-3  h-auto grid grid-cols-3  gap-2  mb-3">
+            </div> -->
+            <!-- <div id="trees-container" class="border-2 border-yellow-500 col-span-3 h-auto flex justify-between flex-wrap gap-2 mb-3">
+ 
+</div> -->
 
   <!-- ডান দিকের ১ কলাম -->
-            <div id="cart-container" class="bg-white border-1 border-gray-200 rounded-lg h-auto ">
+            <!-- <div id="cart-container" class="bg-white border-1 border-gray-200 rounded-lg h-auto ">
 
                 <p class="text-black font-bold pl-2">Your Cart</p>
 
@@ -103,7 +106,47 @@
 
         </div>
 
-    </main>
+    </main> -->
+
+    <main class="bg-[#F0FDF4] h-auto border-2 border-red-500">
+  <div class="h-auto mx-4 sm:mx-9 pt-9">
+
+    <!-- Title -->
+    <div class="flex justify-center items-center">
+      <h3 class="text-lg font-semibold text-black">Choose Your Trees</h3>
+    </div>
+
+    <!-- Section -->
+    <section class="border-2 border-green-500 grid grid-cols-1 md:grid-cols-5 h-auto gap-4 mt-3">
+
+      <!-- বাম দিকের ১ কলাম -->
+      <div class="pl-2 h-auto md:col-span-1">
+        <a class="text-black font-bold">Categories</a>
+        <ul id="Categorie-container" class="text-black text-xs pt-2 grid gap-3">
+        </ul>
+      </div>
+
+      <!-- মাঝখানের ৩ কলাম -->
+      <div id="trees-container" class="border-2 border-yellow-500 md:col-span-3 h-auto flex flex-wrap justify-between gap-2 mb-3">
+        <!-- Tree items এখানে যাবে -->
+      </div>
+
+      <!-- ডান দিকের ১ কলাম -->
+      <div id="cart-container" class="bg-white border-1 border-gray-200 rounded-lg h-auto md:col-span-1">
+        <p class="text-black font-bold pl-2">Your Cart</p>
+        <div id="cart-items" class="">
+        </div>
+        <div class="border-t-1 border-gray-400 mx-1">
+          <div class="flex justify-between items-center px-2">
+            <h5 class="text-xs font-semibold">Total:</h5>
+            <p id="cart-total" class="text-xs font-semibold"><span>৳</span>0</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</main>
 
 <div id="treeModal" class="fixed inset-0 hidden flex items-center justify-center">
   <div class="absolute inset-0 backdrop-blur-sm bg-black/20"></div>
