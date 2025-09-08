@@ -56,10 +56,9 @@ const loadCategory = () =>{
             console.log(err)
         })
          .finally(() => {
-            spinner.classList.add("hidden"); // লোড শেষ হলে স্পিনার লুকাও
+            spinner.classList.add("hidden");
         })
     }
-
 
     const loadAllPlants = () => {
     fetch("https://openapi.programming-hero.com/api/plants")
@@ -71,7 +70,6 @@ const loadCategory = () =>{
         console.log(err)
     })
 }
-
 
     const showTreesByCategory = (plants) =>{
         treesContainer.innerHTML = ""
